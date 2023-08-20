@@ -28,4 +28,5 @@
     
     with open('SubcellularLocalizations_WithAccessions_08202023.json', 'r') as fp:  
         data = json.load(fp)
+        print(data)  
 ```
