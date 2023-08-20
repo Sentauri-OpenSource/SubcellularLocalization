@@ -5,13 +5,19 @@ SubcellularLocalizations_WithAccessions_08202023.json is a json file with all Sw
 SubcellularLocalization_Counts_08202023.csv is a csv file containing the number of accessions in every subcellular localization.  
 
 To load the csv files with pandas:  
+
+  ```python
   import pandas as pd  
 
   df = pd.read_csv('Swiss-Prot_HumanSubset_SubcellularLocalization_08202023.csv')  
   print(df.head(10))  
+  ```
 
 To load the json file:
+
+  ```python
   import json  
     
   with open('SubcellularLocalizations_WithAccessions_08202023.json', 'r') as fp:  
       data = json.load(fp)  
+  ```
